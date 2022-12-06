@@ -38,16 +38,33 @@ input pernament address
 klik submit
     Click Element   //*[@id="submit"]
 
-cek validasi submit
-    ${InputName}   Get Text   //*[@id="name"]
-    ${SubmitName}   Get Text   //*[@id="name"]
-    ${InputEmail}   Get Text   //*[@id="userEmail"]
-    ${SubmitEmail}   Get Text   //*[@id="email"]
-    Log   ${InputEmail}
-    Log   ${SubmitEmail}
-    IF   "${InputName}" == "${SubmitName}"
-        Log   Nama Sesuai
-    ELSE IF   "${InputEmail}" == "${SubmitEmail}"
-        Log   Email Sesuai
-    END
+# cek validasi submit
+#     ${InputName}   Get Text   //*[@id="name"]
+#     ${SubmitName}   Get Text   //*[@id="name"]
+#     # masih belum dapet input email
+#     ${InputEmail}   Get Text   //*[@id="userEmail"]
+#     ${SubmitEmail}   Get Text   //*[@id="email"]
+
+#     ${InputAddress}   Get Text   //*[@id="currentAddress"]
+#     ${SubmitAddress}   Get Text   //*[@id="currentAddress"]
+#     Log   ${InputAddress}
+#     Log   ${SubmitAddress}
+#     IF   "${InputName}" == "${SubmitName}"
+#         Log   Nama Sesuai
+#     ELSE IF   "${InputEmail}" == "${SubmitEmail}"
+#         Log   Email Sesuai
+#     ELSE IF   "${InputAddress}" == "${SubmitAddress}"
+#         Log   Email Sesuai
+#     END
     
+Masuk Checkbox
+    Click Element   //*[@id="item-1"]
+
+klik checkbox Home
+    Click Element   //*[@id="tree-node"]/ol/li/span/label/span[1]
+
+klik expand
+    Click Element   //*[@id="tree-node"]/ol/li/span/button
+
+klik expand all
+    Click Element   //*[@id="tree-node"]/div/button[1]

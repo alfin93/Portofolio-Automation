@@ -19,4 +19,4 @@ TC3_input semua field
    input address
    input pernament address
    klik submit
-   cek validasi submit
+   # cek validasi submit
